@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+    .container
+      .navbar-header
+        button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-main-collapse')
+          i.fa.fa-bars
+        a.navbar-brand.page-scroll(href='#page-top') QuoTea
+      .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+        ul.nav.navbar-nav
+          li.hidden
+            a(href='#page-top')
+          li
+            a.page-scroll(href='#usage') Usage
+          li
+            a.page-scroll(href='#contribute') Contribute
+          li
+            a.page-scroll(href='#contact') Contact Us
+  header.intro.parallax-window
+    .intro-body
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            hs.brand-heading QuoTea
+            p.intro-text A free, inspirational quote API for everyone!
+            a.btn.btn-circle.page-scroll(href='#usage')
+              i.fa.fa-angle-double-down.animated
+  section#usage.container.content-section.text-center
+    .row
+      .col-lg-8.col-lg-offset-2
+        h2 How to use QuoTea?
+        hr.light
+        p QuoTea is free and anyone can use it!
+        p In order to utilise our APIs just make a request to our server endpoint
+        code GET http://test.com:1337/quote/random
+
+        p This will return a random quote in JSON format
+        code { "quote" : "random quote text", "author" : "Example Author" }
