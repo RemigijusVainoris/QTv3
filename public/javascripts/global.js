@@ -1,6 +1,6 @@
 $(document).ready(collapseNavbar);
 $(window).scroll(collapseNavbar);
-$('.parallax-window').parallax({imageSrc: '../images/header.jpeg'});
+$('.parallax-window').parallax({imageSrc: '../images/head.jpeg'});
 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
