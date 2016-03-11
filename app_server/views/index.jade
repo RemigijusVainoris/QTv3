@@ -17,7 +17,7 @@ block content
             a.page-scroll(href='#contribute') Contribute
           li
             a.page-scroll(href='#contact') Contact Us
-  header.intro.parallax-window
+  section.intro.parallax-window
     .intro-body
       .container
         .row
@@ -30,9 +30,30 @@ block content
     .row
       .col-lg-8.col-lg-offset-2
         h2 How to use QuoTea?
-        hr.light
         p In order to utilise our APIs just make a request to our server endpoint
         code GET http://test.com:1337/quote/random
 
         p This will return a random quote in JSON format
         code { "quote" : "random quote text", "author" : "Example Author" }
+  section#contribute.container.content-section.text-center.dark
+    .row
+      .col-lg-8.col-lg-offset-2
+        h2 Want to Contribute?
+        p Help QuoTea expand by submitting your own quotes to our servers
+        form
+          input(name='quote',placeholder='Quote', required=true)
+          br
+          input(name='author',placeholder='Author', required=true)
+          br
+          input(type='submit', value='Submit your quote!')
+  section#contact.container.content-section.text-center.dark
+    .row
+      .col-lg-8.col-lg-offset-2
+        h2 Contact us
+        p Help QuoTea expand by submitting your own quotes to our servers
+        form
+          input(name='quote',placeholder='Quote', required=true)
+          br
+          input(name='author',placeholder='Author', required=true)
+          br
+          input(type='submit', value='Submit your quote!')

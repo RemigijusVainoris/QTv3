@@ -28,3 +28,19 @@ $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     }
 });
+
+
+$(document).on('scroll', function () {
+    var scrollPos = $(document).scrollTop();
+    $('section').each(function() {
+        var current = $(this);
+        var bgColor = current.css('backgroundColor');
+        if (current.position().top - $('.navbar').height() <= scrollPos && current.position().top - $('.navbar').height() + current.height() > scrollPos) {
+            $('.navbar').css('background', bgColor);
+        }
+        if (current.prop('header')) {
+            $('.navbar').css('background','none');
+        }
+    });
+
+});
