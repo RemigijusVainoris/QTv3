@@ -41,11 +41,13 @@ block content
         h2 Want to Contribute?
         p Help QuoTea expand by submitting your own quotes to our servers
         form
-          input(name='quote',placeholder='Quote', required=true)
-          br
-          input(name='author',placeholder='Author', required=true)
-          br
-          input(type='submit', value='Submit your quote!')
+          .form-group
+            label(for='quote')
+            input.form-control(name='quote',placeholder='Quote', required=true)
+          .form-group
+            label(for='author')
+            input.form-control(name='author',placeholder='Author', required=true)
+          input.btn.btn-default(type='submit', value='Submit your quote!')
   section#contact.container.content-section.text-center.dark
     .row
       .col-lg-8.col-lg-offset-2

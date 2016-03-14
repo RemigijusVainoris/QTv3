@@ -398,3 +398,8 @@ section.container .row .col-lg-8 {
     height: 100%;
     position: relative;
 }
+
+.form-control{
+    max-width: 50%;
+    margin: 0 auto;
+}
