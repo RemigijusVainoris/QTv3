@@ -385,12 +385,17 @@ section.container {
 
 section.container .row {
     display: table;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     position: relative;
     margin: 0px;
 }
-
+@media (max-width: 767px) {
+    section.container .row {
+        padding-top: 71px;
+        padding-bottom: 71px;
+    }
+}
 section.container .row .col-lg-8 {
     display: table-cell;
     vertical-align: middle;
@@ -402,6 +407,16 @@ section.container .row .col-lg-8 {
 .form-control{
     max-width: 50%;
     margin: 0 auto;
+    border-radius: 0;
+}
+@media (max-width: 550px) {
+    .form-control{
+        max-width: 100%;
+    }
+    .submit-quote-btn {
+        width: 100%;
+
+    }
 }
 
 .submit-quote-btn {
@@ -414,4 +429,13 @@ section.container .row .col-lg-8 {
     -ms-transform: scale(0.35);
     -o-transform: scale(0.35);
     transform: scale(0.35);
+}
+
+
+.contact__mail {
+    line-height: 57px;
+}
+
+.contact__mail .material-icons {
+    font-size: 33px;
 }

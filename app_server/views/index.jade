@@ -40,12 +40,10 @@ block content
       .col-lg-8.col-lg-offset-2
         h2 Want to Contribute?
         p Help QuoTea expand by submitting your own quotes to our servers
-        form
+        form.submit-quote-form
           .form-group
-            label(for='quote')
             input.form-control(name='quote',placeholder='Quote', required=true)
           .form-group
-            label(for='author')
             input.form-control(name='author',placeholder='Author', required=true)
           input.btn.btn-default.submit-quote-btn(type='submit', value='Submit your quote!')
   section#contact.container.content-section.text-center.dark
@@ -53,3 +51,6 @@ block content
       .col-lg-8.col-lg-offset-2
         h2 Contact us
         p Any questions? Drop us an email and we will get back to you as soon as possible!
+        p.email-div
+          a.btn.btn-circle.contact__mail(href='mailto:info@remiam.co.uk')
+            i.material-icons.animated email
