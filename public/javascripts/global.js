@@ -16,7 +16,7 @@ $(function () {
     $('form.submit-quote-form').on('submit', function (event) {
         event.preventDefault();
         var data = {};
-        data.query = $('input[name="quote"]').val();
+        data.quote = $('input[name="quote"]').val();
         data.author = $('input[name="author"]').val();
         console.log(data);
         $.ajax({
